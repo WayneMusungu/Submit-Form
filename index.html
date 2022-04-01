@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <title>Form Submit Demo</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Me!</h1>
+        <form action="https://formsubmit.co/d6cc6e46342dc5b4e31c00eef84eef91" method="POST">
+            <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="Firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" name="First&nbsp;Name" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="Lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" name="Email" id="email" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" name="Phone&nbsp;No." id="phoneNumber" placeholder="+(254)712345678">
+    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="comments" class="form-label">Comments and questions?</label>
+                    <textarea class="form-control" id="comments" name="comments,&nbsp;questions" rows="3"
+                        required></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="btn-primary">Submit</button>
+                </div>
+            </div>
+
+        </form>
+        
+
+    </div>
+</body>
+
+</html>
